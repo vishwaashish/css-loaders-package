@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export.
+    "declaration": true, // Generate declaration files (.d.ts) for TypeScript files.
+    "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules.
+    "jsx": "react-jsx", // Use the new JSX transform for React. Use "react-jsxdev" for development.
+    "lib": [
+      "ESNext",
+      "DOM",
+      "ES2016",
+      "ES2017",
+      "ESNext.AsyncIterable"
+    ],
+    "module": "ESNext", // Specify the module code generation.
+    "moduleResolution": "node", // Use Node.js-style module resolution.
+    "noImplicitAny": true, // Raise an error on expressions and declarations with an implied 'any' type.
+    "noImplicitReturns": true, // Report errors when not all code paths in a function return a value.
+    "noImplicitThis": true, // Raise an error on 'this' expressions with an implied 'any' type.
+    "noUnusedParameters": true, // Raise an error on unused parameters.
+    "outDir": "./lib/esm", // Specify the output directory for compiled files.
+    "strictNullChecks": true, // Enable strict null checking.
+    "target": "ESNext", // Specify the ECMAScript target version. Consider updating to "ESNext" for the latest features.
+    "typeRoots": [
+      "node_modules/@types" // Specify where to find type definitions.
+    ],
+    "rootDir": "./src",
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "**/*.spec.ts",
+    "src/types.js",
+    "src/constant.js"
+  ]
+}

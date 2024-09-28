@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true, // Use the `define` semantics for class fields.
+    "lib": [
+      "ES2020", // Include standard library features for ES2020.
+      "DOM", // Include DOM type definitions.
+      "DOM.Iterable", // Include iterable types for DOM collections.
+      "ESNext"
+    ],
+    "module": "ESNext", // Specify the module code generation.
+    "skipLibCheck": true, // Skip type checking of declaration files to speed up compilation.
+    // Bundler mode
+    "moduleResolution": "Bundler", // Use the bundler resolution strategy for modules.
+    "allowImportingTsExtensions": true, // Allow importing TypeScript files with `.ts` extensions.
+    "resolveJsonModule": true, // Allow importing JSON files as modules.
+    "isolatedModules": false, // Do not enforce isolated modules.
+    "noEmit": true, // Do not emit output files; only perform type checking.
+    "jsx": "react-jsx", // Use the new JSX transform. Consider "react-jsxdev" for development.
+    // Linting options
+    "strict": true, // Enable all strict type-checking options.
+    "noUnusedParameters": true, // Raise an error on unused parameters.
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statements.
+    "noImplicitAny": true, // Raise an error on expressions and declarations with an implied 'any' type.
+    "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules.
+    "forceConsistentCasingInFileNames": true // Enforce consistent casing in file names to avoid issues across platforms.
+  },
+  "include": [
+    "src",
+    "src/generateCss.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib"
+  ]
+}
