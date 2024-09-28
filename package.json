@@ -1,10 +1,23 @@
 {
   "name": "css-loaders",
-  "version": "1.1.1",
+  "version": "1.0.0",
+  "description": "A collection of customizable CSS loaders for your projects.",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "author": "Ashishkumar Vishwakarma",
+  "keywords": [
+    "css",
+    "loaders",
+    "react",
+    "components",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishwaashish/css-loaders-package.git"
+  },
+  "homepage": "https://github.com/vishwaashish/css-loaders-package/blob/main/README.md",
   "files": [
     "/lib"
   ],
